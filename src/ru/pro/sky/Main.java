@@ -4,9 +4,21 @@ public class Main {
 
     public static void main(String[] args) {
         Author author1 = new Author("Лев", "Толстой");
-        Book book1 = new Book("Война и Мир", author1, 1954);
+        Book book1 = new Book("Война и Мир", author1, 1914);
 
-        Auth
+        Author author2 = new Author("Джордж", "Оруэл");
+        Book book2 = new Book("1984", author2, 1951);
+
+        System.out.println("Год старого издания " + book2.GetYear());
+
+        book1.SetYear(2015);
+        System.out.println("Год нового издания " + book1.GetYear());
+
+        System.out.println(author1.GetFirstName()+" " + author1.GetSecondName());
+
+
+
+
 
 
 
